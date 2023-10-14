@@ -9,3 +9,6 @@ lexer.o: lexer.c
 
 lexer.c: lexer.l
 	flex -t lexer.l > lexer.c
+run:
+	./count_words  < lexer.l
+
